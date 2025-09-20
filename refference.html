@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Announcement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f8f9fa;
+    }
+
+    /* Heading */
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    /* Notice box */
+    .notice-box {
+      background-color: #eaf4fc;
+      border: 1px solid #bcdffb;
+      padding: 20px;
+      margin: 20px auto;
+      width: 70%;
+      min-height: 150px;
+      position: relative; /* for absolute child */
+      overflow: auto; /* handles overflow scroll */
+      border-radius: 8px;
+    }
+
+    /* Floating image */
+    .notice-box img {
+      float: left;
+      margin-right: 15px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Decorative element */
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff4757;
+      color: white;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+
+    /* Clear float */
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Heading -->
+  <h1>Important Notice</h1>
+
+  <!-- Notice Box -->
+  <div class="notice-box">
+    <img src="https://via.placeholder.com/120" alt="School Notice">
+    <p>
+      Dear students and parents,  
+      This is to inform you that the school will remain closed on Friday due to a public holiday. 
+      Regular classes will resume on Monday. Please make sure to check the school website for 
+      further updates and announcements. Thank you for your cooperation.  
+    </p>
+
+    <!-- Decorative badge -->
+    <div class="badge">!</div>
+
+    <!-- Clear float -->
+    <div class="clear"></div>
+  </div>
+
+</body>
+</html>
