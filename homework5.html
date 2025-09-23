@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blog post layout</title>
+    <style>
+       .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #333;
+        }
+
+        .author {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+            text-align: center;
+        }           
+        .content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+       div  > p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            text-indent: 50px;
+        }
+        p::first-line {
+            font-weight: bold;
+        }
+        p::first-letter {
+            font-size: 200%;    
+            color: #ed4f0cf7;
+        }
+        quote {
+            font-style: italic;
+            a::before {
+                content: open-quote;
+            }
+            a::after {
+                content: close-quote;
+            }
+        }
+        link {
+            a:hover {
+                text-decoration: underline;
+            }
+            a:visited {
+                color: #9b59b6;
+            }
+            a:active {
+                color: #e74c3c; 
+            }
+      
+        }
+    
+        h4 {
+            text-align:left;
+        }
+        div+h4 {
+            font-style: italic;
+            text-align: right;
+            color: #5f0e0e;
+            margin-top: 20px;
+        }
+
+            </style>
+</head>
+<body>
+    <div class="title">The Wonders of Nature</div>
+    <div class="author">by JOHN WICK | March 10, 2024</div>
+    <div class="content">
+        <p>Nature is a beautiful and intricate system that surrounds us. From the towering mountains to the deep blue oceans, every aspect of nature has its own unique charm. The diversity of flora and fauna is astounding, and each species plays a crucial role in maintaining the balance of our ecosystem.</p>
+        <p>Spending time in nature has been shown to have numerous benefits for mental and physical health. It can reduce stress, improve mood, and enhance overall well-being. Whether it's a walk in the park or a hike in the wilderness, connecting with nature can be a rejuvenating experience.</p>
+        <p>As we continue to explore and appreciate the wonders of nature, it's important to remember our responsibility to protect and preserve it for future generations. Conservation efforts and sustainable practices are essential in ensuring that the beauty of nature remains intact.</p>
+    <quote>
+            <p>"In every walk with nature, one receives far more than he seeks." - John wick</p>
+        </quote>
+        <p>In conclusion, nature is a treasure trove of beauty and wonder that enriches our lives in countless ways. By embracing and protecting it, we can ensure that its splendor continues to inspire and captivate us for years to come.</p>
+    <link>
+        <p>For more articles on nature and conservation, visit <a href="https://www.nationalgeographic.com/environment/article/conservation">National Geographic</a>.</p>
+    </link>
+    <h4>John Wick</h4>
+    </div>
+    <h4>March 10, 2024</h4>
+</body> 
+</html>
