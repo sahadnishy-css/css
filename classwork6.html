@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>product card</title>
+        <style>
+            .card {
+                border: 2px solid black;
+                border-radius: 10px 0px 10px 0px;   
+                width: 300px;
+                margin: 20px auto;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                font-family: Arial, sans-serif;
+            }
+            .card img {
+                width: 100%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .card-body {
+                padding: 15px;
+            }
+            .card-title {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: #333;
+            }
+            .card-price {
+                font-size: 18px;
+                color: #e91e63;
+                font-weight: bold;
+            }
+            .buy-button {
+                display: inline-block;
+                padding: 10px 15px;
+                background-color: #4CAF50;
+                color: white;
+                text-align: center;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            .buy-button:hover {
+                background-color: #45a049;
+            }
+            @media (max-width: 600px) {
+                .card {
+                    width: 90%;
+                    font-size: 14px;
+                    align-content: center;
+                }
+            .landscape {
+                width: 70%;
+                background-color: lightblue;
+                align-content: center;
+            }
+            }
+            body {
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/01/48/9e/01489e580a08e2e8d4f85248b1dcc1da.jpg" alt="Product Image">
+            <div class="card-body">
+                <div class="card-title">NIKE PHANTOM</div>
+                <div class="card-price">$29.99</div>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+</html>
