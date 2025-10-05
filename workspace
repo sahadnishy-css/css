@@ -1,0 +1,8 @@
+Create a simple "Team Profile web page" for a fictional company. The page should show:
+A main heading and a subheading.
+A quote about teamwork.
+A team photo styled as a circle and centered.
+A table listing 3 employees with their names, roles, and status.
+The table should show one active, one on leave, and one resigned employee, using color indicators.
+A warning alert should appear if any employee is not currently active.
+Make it look professional and responsive using Bootstrap
