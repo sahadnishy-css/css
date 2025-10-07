@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body {
+        background: linear-gradient(#7d75a7, #c4ab7f) no-repeat;
+        width: 50%;
+        height: 100vh;
+        margin: auto;
+        padding: 20px;
+        font-family: sans-serif;
+      }
+      .logincontainer1{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:50%;
+        height:100vh;
+        width:50%;
+        background-color: white;
+        border:none;
+
+      }
+       .login-container {
+      background: white;
+      padding: 30px;
+      border-radius: 0px;
+      width: auto;
+      margin: auto;
+      margin-top: 100px;
+    }
+    .login-container h2 {
+      font-family: sans-serif;
+      text-align: left;
+      margin-bottom: 20px;
+      width: auto;
+      color: orangered;
+      font-weight: 200;
+    }
+
+    .login-container label {
+      display: block;
+      font-family: sans-serif;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    .labelling{
+      font-style: italic;
+
+    }
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 0;
+      margin:auto;
+    }
+    .login-container input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: orangered;
+      color: white;
+      border: none;
+      border-radius: 0;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      opacity: 0.8;
+    }
+  
+       
+@media screen and (max-width: 600px) {
+
+  body {
+    box-sizing: border-box;
+    background: white;  
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    margin-left:10px;
+    padding: 0;
+    display: grid;
+    justify-content: left;
+    align-items: left;
+
+  }
+
+  .logincontainer1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+  }
+
+  .login-container {
+    width: 200%;
+    max-width: 300px;
+    margin: auto;  
+    padding: 0;
+
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="logincontainer1">
+      <div class="login-container">
+        <h2>Login Form</h2>
+        <form>
+          <label>Email:</label>
+          <input type="email" required />
+          <label>Password:</label>
+          <input type="password" required />
+          <label class="labelling">
+
+              <input type="checkbox" checked="checked" name="remember" />
+            Remember me
+          </label>
+          <button type="submit">Login</button>
+        </form>
+
+      </div>
+    </div>
+
+    </div>
+  </body>
+</html>
